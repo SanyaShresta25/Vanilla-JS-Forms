@@ -118,9 +118,12 @@ button:hover {
 /* Mobile responsive */
 @media (max-width: 480px) {
   body {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 15px;
-    align-items: flex-start;
     font-size: 16px;
     line-height: 1.4;
   }
@@ -179,4 +182,5 @@ button:hover {
     justify-content: center;
   }
 }
+
 
