@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #ffeef2; 
@@ -8,6 +7,8 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .logo-container {
@@ -21,12 +22,10 @@ body {
   filter: drop-shadow(0 0 6px #f48fb1);
 }
 
-
 form.form-grid {
   background-color: #fff0f5;
   padding: 30px;
   border-radius: 12px;
-  
   box-shadow: 
     0 0 8px 2px rgba(244, 164, 193, 0.6),
     0 0 20px 6px rgba(244, 164, 193, 0.4),
@@ -38,12 +37,12 @@ form.form-grid {
   max-width: 400px;
   transition: box-shadow 0.3s ease-in-out;
 }
+
 .form-item.full-width {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: center;  /* centers horizontally */
+  justify-content: center;
 }
-
 
 form.form-grid:hover {
   box-shadow: 
@@ -72,6 +71,7 @@ input[type="number"] {
   border: 1px solid #f8c8dc;
   background-color: #fff;
   color: #333;
+  font-size: 1rem;
 }
 
 input[type="checkbox"] {
@@ -87,6 +87,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+  font-size: 1rem;
 }
 
 button:hover {
@@ -105,4 +106,69 @@ button:hover {
 
 .full-width {
   grid-column: 1 / -1;
+}
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 15px;
+    align-items: flex-start;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  form.form-grid {
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: none; 
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 50px;
+    filter: drop-shadow(0 0 4px #f48fb1);
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .form-item label {
+    font-size: 0.95rem;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    font-size: 0.95rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .checkbox {
+    font-size: 0.95rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 10px;
+    width: 100%; 
+    margin-top: 10px;
+  }
+
+  #output {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .form-item.full-width {
+    justify-content: center;
+  }
 }
