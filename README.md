@@ -4,7 +4,7 @@ This is a fun and interactive JavaScript-based form project that checks if you'r
 
 ## 🔗 Live Preview
 
-- 💻 **Solution URL**: [See the code](#)  
+- 💻 **Solution URL**: [See the code](https://github.com/SanyaShresta25/Vanilla-JS-Forms)  
 - 🌐 **Live Site URL**: [View it in action](#)
 
 ## 🛠️ My Process
