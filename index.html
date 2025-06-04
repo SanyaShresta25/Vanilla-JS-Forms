@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Discount Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.jpg" type="image/png" />
+
+
+  <!-- Internal JS -->
+  <script>
+    function formatGreeting(name, age) {
+      const greeting = `Hello, ${name}! You are ${age} years old.<br>`;
+      console.log(`Greeting: Hello, ${name}! You are ${age} years old.`);
+      return greeting;
+    }
+  </script>
+</head>
+<body>
+  <form class="form-grid" onsubmit="handleSubmit(event)">
+    <div class="logo-container">
+  <img src="spotify.jpg" alt="Pinterest Logo" class="logo" />
+</div>
+
+    <h2>Student Discount Form</h2>
+
+    <div class="form-item">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div class="form-item">
+      <label for="age">Age:</label>
+      <input type="number" id="age" required min="1">
+    </div>
+
+    <div class="form-item checkbox">
+      <label>
+        <input type="checkbox" id="student">
+        I am a student
+      </label>
+    </div>
+
+    <div class="form-item full-width">
+      <button type="submit">Submit</button>
+    </div>
+
+    <div class="form-item full-width" id="output"></div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
