@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffeef2;
+background-color: #fff5f8;
   color: #333;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ button:hover {
   form.form-grid {
     padding: 20px 15px;
     border-radius: 10px;
-    box-shadow: none;
+    box-shadow: 0 0 12px rgba(244, 164, 193, 0.3);
     width: 100%;
     max-width: 100%;
   }
@@ -179,3 +179,4 @@ button:hover {
     justify-content: center;
   }
 }
+
